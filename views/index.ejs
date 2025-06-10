@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1> <%= title %> </h1>
+
+    <% messages.forEach((message) => { %>
+      <%- include('../components/message', {message: message}); %>
+    <% }); %>
+  </body>
+</html>
