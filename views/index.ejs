@@ -8,7 +8,7 @@
 
     <% messages.forEach((message) => { %>
       <%- include('components/message', {message: message}); %>
-      <%- include('components/button', {ref: messages.indexOf(message), target: "_blank", text: "Open Message"}); %>
+      <%- include('components/button', {ref: `message/${messages.indexOf(message)}`, target: "_blank", text: "Open Message"}); %>
     <% }); %>
 
     <%- include('components/button', {ref: "new", target: "_self", text: "Send a new message"}); %>

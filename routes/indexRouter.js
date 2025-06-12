@@ -4,6 +4,6 @@ const { displayIndex, displayMessage } = require("../controllers/indexController
 const indexRouter = Router();
 
 indexRouter.get("/", displayIndex);
-indexRouter.get("/:messageIndex", displayMessage);
+indexRouter.get("/message/:messageIndex", displayMessage);
 
 module.exports = indexRouter;
