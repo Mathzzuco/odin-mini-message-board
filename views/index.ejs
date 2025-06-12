@@ -8,6 +8,7 @@
 
     <% messages.forEach((message) => { %>
       <%- include('components/message', {message: message}); %>
+      <%- include('components/openButton', {messageIndex: messages.indexOf(message)}); %>
     <% }); %>
 
     <%- include('components/newButton', {}); %>

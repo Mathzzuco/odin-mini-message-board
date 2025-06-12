@@ -10,8 +10,8 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", indexRouter);
 app.use("/new", newRouter);
+app.use("/", indexRouter);
 
 app.use((err, req, res, next) => {
   console.error(err);
