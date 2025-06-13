@@ -1,1 +1,1 @@
-# odin-mini-message-board
+An Odin project to make a message board to try out express and ejs.

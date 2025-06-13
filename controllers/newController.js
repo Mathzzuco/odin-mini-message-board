@@ -1,7 +1,7 @@
 const { messages } = require("../db");
 
 const displayNew = (req, res) => {
-    res.render("new", {});
+    res.render("newPage", {});
 };
 
 const postMessage = (req, res) => {
